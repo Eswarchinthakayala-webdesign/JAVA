@@ -15,6 +15,12 @@ public class TypeCasting {
         float num1=input.nextFloat();
         int num2=(int)(num1);
         System.out.println("Gives Integer Value: "+num2);
+        //    Automatic Type Promotion
+    byte a=30;
+    byte b=40;
+    byte c=100;
+    int d=(a*b)/c;
+    System.out.println(d);
 
     }
 }
