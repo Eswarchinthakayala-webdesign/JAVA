@@ -31,6 +31,7 @@ public class SwitchCase {
                     default:
                         System.out.println("No department");
                 }
+                break;
             default:
                 System.out.println("Enter correct Employee ID");
         }
