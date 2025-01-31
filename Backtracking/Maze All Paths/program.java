@@ -21,27 +21,32 @@ public class Backtrack {
 
         if(maze[r][c])
         {
+
             return;
         }
         if(r<maze.length-1)
         {
             maze[r][c]=true;
             AllPaths(p+'D',maze,r+1,c);
+            maze[r][c]=false;
         }
         if(c<maze[0].length-1)
         {
             maze[r][c]=true;
             AllPaths(p+'R',maze,r,c+1);
+            maze[r][c]=false;
         }
         if(r>0)
         {
             maze[r][c]=true;
             AllPaths(p+'U',maze,r-1,c);
+            maze[r][c]=false;
         }
         if(c>0)
         {
             maze[r][c]=true;
             AllPaths(p+'L',maze,r,c-1);
+            maze[r][c]=false;
         }
 
     }
